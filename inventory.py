@@ -4,7 +4,7 @@ class Inventory:
 
     def add_item(self, name, qty, price):
         if qty <= 0 or price <= 0:
-            raise ValueError("QUantidade deve ser maior que 0")
+            raise ValueError("Quantidade deve ser maior que 0")
         if name in self.items:
             raise ValueError("Item já cadastrado")
         self.items[name] = {"qty": qty, "price": price}
